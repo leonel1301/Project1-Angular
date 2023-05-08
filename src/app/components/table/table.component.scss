@@ -1,0 +1,9 @@
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.space-between > button {
+  margin: 20px 0 10px 10px;
+}

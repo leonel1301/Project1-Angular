@@ -1,0 +1,56 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "movies": [
+    {
+      "title": "Volver al Futuro",
+      "rating": 10,
+      "year": 1985,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Ttg_delorean_pax.jpg/1200px-Ttg_delorean_pax.jpg",
+      "id": 2
+    },
+    {
+      "title": "Rio 1",
+      "rating": 8,
+      "year": 2011,
+      "image": "https://assets.nflxext.com/us/boxshots/hd1080/70138804.jpg",
+      "id": 3
+    },
+    {
+      "title": "The Amazing Spiderman",
+      "rating": 9,
+      "year": 2012,
+      "image": "https://m.media-amazon.com/images/M/MV5BMjMyOTM4MDMxNV5BMl5BanBnXkFtZTcwNjIyNzExOA@@._V1_FMjpg_UX1000_.jpg",
+      "id": 4
+    },
+    {
+      "title": "Uncut Gems",
+      "rating": 7.4,
+      "year": 2019,
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRF0hu4itVM7SC7E5opheq8oaGb04Wq3VK9uvf6NPIaOGCWpjjw",
+      "id": 5
+    },
+    {
+      "title": "Avatar 2",
+      "rating": 8.5,
+      "year": 2022,
+      "image": "data:image/jpeg;base64,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",
+      "id": 6
+    }
+  ]
+}

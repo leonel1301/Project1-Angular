@@ -1,0 +1,34 @@
+
+<div class="form-container">
+  <div mat-dialog-title class="title-container">
+    <h1>Movie Form</h1>
+  </div>
+  <form [formGroup]="movieForm" (ngSubmit)="onFormSubmit()" class="form-content">
+    <h2 mat-dialog-title>{{ movieId ? 'Editar película' : 'Agregar película' }}</h2>
+    <mat-dialog-content>
+      <mat-form-field appearance="fill">
+        <mat-label>Título</mat-label>
+        <input matInput formControlName="title" />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Calificación</mat-label>
+        <input matInput formControlName="rating" type="number" step="0.1" min="0" max="10" />
+        <mat-error *ngIf="movieForm.controls['rating'].errors?.['required']">La calificación es requerida</mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Año</mat-label>
+        <input matInput formControlName="year" type="number" min="1800" max="2099" />
+        <mat-error *ngIf="movieForm.controls['year'].errors?.['required']">El año es requerido</mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>URL de la imagen</mat-label>
+        <input matInput formControlName="image" />
+        <mat-error *ngIf="movieForm.controls['image'].errors?.['required']">La URL de la imagen es requerida</mat-error>
+      </mat-form-field>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+      <button mat-button mat-dialog-close>Cancelar</button>
+      <button mat-raised-button color="primary" type="submit">{{ movieId ? 'Actualizar' : 'Agregar' }}</button>
+    </mat-dialog-actions>
+  </form>
+</div>

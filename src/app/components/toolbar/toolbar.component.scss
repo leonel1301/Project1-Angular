@@ -1,0 +1,22 @@
+.mat-toolbar {
+  background-color: #2196F3; 
+  font-weight: bold;
+  color: white; 
+  display: flex;
+  justify-content: space-between;
+}
+
+.mat-toolbar span {
+  color: white; 
+}
+
+.mat-toolbar a {
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  margin-left: 16px;
+}
+
+.mat-toolbar a:hover {
+  color: #FF9800; 
+  text-decoration: none;
+}
